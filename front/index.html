@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgendaFacil — Agendamento Online para Clínicas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-brand">📅 AgendaFacil</div>
+  <div class="nav-links">
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#preco">Preço</a>
+    <a href="admin.html" class="btn-outline">Login</a>
+    <a href="#cadastro" class="btn-primary">Começar Grátis</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Seus pacientes esquecem do horário?<br><span class="highlight">A gente lembra por você.</span></h1>
+    <p>Agendamento online + lembretes automáticos no WhatsApp + pedido de avaliação no Google Maps. Tudo automático, sem você fazer nada.</p>
+    <div class="hero-buttons">
+      <a href="#cadastro" class="btn-primary btn-grande">Começar Grátis →</a>
+      <a href="#como-funciona" class="btn-outline btn-grande">Ver Como Funciona</a>
+    </div>
+    <p class="hero-small">✓ Sem cartão de crédito ✓ Setup em 2 minutos ✓ Cancele quando quiser</p>
+  </div>
+  <div class="hero-demo">
+    <div class="demo-card">
+      <div class="demo-header">📱 WhatsApp</div>
+      <div class="demo-msg recebida">
+        <strong>Clínica Beleza</strong><br>
+        Olá Maria! Seu Limpeza de Pele é amanhã às 14h. Nos vemos lá! 💆‍♀️
+      </div>
+      <div class="demo-msg recebida" style="animation-delay: 1s">
+        <strong>Clínica Beleza</strong><br>
+        Oi Maria! Como foi seu atendimento? Nos avalie no Google: ⭐⭐⭐⭐⭐<br>
+        <a href="#">maps.google.com/clinicabeleza</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="secao">
+  <h2>Como Funciona</h2>
+  <div class="passos">
+    <div class="passo">
+      <div class="passo-numero">1</div>
+      <h3>Você cadastra</h3>
+      <p>Cadastre seus serviços, horários e gere seu link personalizado de agendamento.</p>
+    </div>
+    <div class="passo">
+      <div class="passo-numero">2</div>
+      <h3>Paciente agenda</h3>
+      <p>Envie o link pro paciente. Ele escolhe serviço, data e horário. Sem ligação, sem mensagem.</p>
+    </div>
+    <div class="passo">
+      <div class="passo-numero">3</div>
+      <h3>WhatsApp lembra</h3>
+      <p>Antes do horário, o sistema manda lembrete automático pro paciente no WhatsApp.</p>
+    </div>
+    <div class="passo">
+      <div class="passo-numero">4</div>
+      <h3>Google avalia</h3>
+      <p>Depois do atendimento, mensagem automática pedindo avaliação no Google Maps.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RECURSOS -->
+<section id="recursos" class="secao secao-cinza">
+  <h2>Tudo que você precisa</h2>
+  <div class="recursos-grid">
+    <div class="recurso">
+      <div class="recurso-icon">📅</div>
+      <h3>Agendamento Online</h3>
+      <p>Página personalizada com seus serviços e horários. O paciente agenda sozinho.</p>
+    </div>
+    <div class="recurso">
+      <div class="recurso-icon">💬</div>
+      <h3>Lembretes por WhatsApp</h3>
+      <p>Mensagem automática antes do horário. Reduza faltas em até 80%.</p>
+    </div>
+    <div class="recurso">
+      <div class="recurso-icon">⭐</div>
+      <h3>Avaliação no Google</h3>
+      <p>Pedido automático de avaliação depois do atendimento. Mais estrelas, mais clientes.</p>
+    </div>
+    <div class="recurso">
+      <div class="recurso-icon">📊</div>
+      <h3>Dashboard Simples</h3>
+      <p>Veja todos os agendamentos da semana em uma tela. Sem complicação.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PREÇO -->
+<section id="preco" class="secao">
+  <h2>Preço</h2>
+  <div class="preco-card">
+    <div class="preco-plano">Plano Único</div>
+    <div class="preco-valor">R$ 29<span>/mês</span></div>
+    <ul class="preco-lista">
+      <li>✓ Agendamentos ilimitados</li>
+      <li>✓ Lembretes automáticos por WhatsApp</li>
+      <li>✓ Pedido automático de avaliação</li>
+      <li>✓ Até 20 serviços cadastrados</li>
+      <li>✓ Suporte por WhatsApp</li>
+    </ul>
+    <a href="#cadastro" class="btn-primary btn-grande">Começar Agora</a>
+  </div>
+</section>
+
+<!-- CADASTRO -->
+<section id="cadastro" class="secao secao-cinza">
+  <h2>Crie sua conta grátis</h2>
+  <form id="form-cadastro" class="form-box">
+    <div class="form-grupo">
+      <label>Nome do estabelecimento</label>
+      <input type="text" id="nome" placeholder="Ex: Clínica Beleza" required>
+    </div>
+    <div class="form-grupo">
+      <label>Link personalizado</label>
+      <div class="input-prefix">
+        <span>agendafacil.com/</span>
+        <input type="text" id="slug" placeholder="minha-clinica" required>
+      </div>
+    </div>
+    <div class="form-grupo">
+      <label>Email</label>
+      <input type="email" id="email" placeholder="seu@email.com" required>
+    </div>
+    <div class="form-grupo">
+      <label>Senha</label>
+      <input type="password" id="senha" placeholder="Mínimo 6 caracteres" required minlength="6">
+    </div>
+    <div class="form-grupo">
+      <label>Telefone/WhatsApp</label>
+      <input type="tel" id="telefone" placeholder="35999999999">
+    </div>
+    <div class="form-grupo">
+      <label>Link do Google Maps</label>
+      <input type="url" id="google_maps" placeholder="https://maps.google.com/...">
+    </div>
+    <button type="submit" class="btn-primary btn-grande">Criar Minha Conta →</button>
+  </form>
+  <div id="cadastro-resultado"></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 AgendaFacil — Feito com 💙 em Minas Gerais</p>
+</footer>
+
+<script>
+document.getElementById('form-cadastro').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = e.target.querySelector('button');
+  btn.disabled = true;
+  btn.textContent = 'Criando...';
+
+  try {
+    const res = await fetch('/api/estabelecimentos', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nome: document.getElementById('nome').value,
+        slug: document.getElementById('slug').value,
+        email: document.getElementById('email').value,
+        senha: document.getElementById('senha').value,
+        telefone: document.getElementById('telefone').value,
+        google_maps_url: document.getElementById('google_maps').value
+      })
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      document.getElementById('cadastro-resultado').innerHTML =
+        '<div class="alerta sucesso">✅ Conta criada! <a href="admin.html">Faça login aqui</a></div>';
+      e.target.reset();
+    } else {
+      document.getElementById('cadastro-resultado').innerHTML =
+        '<div class="alerta erro">❌ ' + (data.erro || 'Erro ao criar conta') + '</div>';
+    }
+  } catch (err) {
+    document.getElementById('cadastro-resultado').innerHTML =
+      '<div class="alerta erro">❌ Erro de conexão. Tente novamente.</div>';
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Criar Minha Conta →';
+});
+</script>
+
+</body>
+</html>
