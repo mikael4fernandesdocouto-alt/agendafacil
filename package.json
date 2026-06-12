@@ -1,17 +1,25 @@
 {
-  "name": "agendafacil-server",
+  "name": "agendafacil",
   "version": "1.0.0",
-  "description": "Backend do AgendaFacil - Agendamento para clínicas e pequenos negócios",
-  "main": "server.js",
+  "description": "Back-end TypeScript do AgendaFacil - Agendamento para clínicas e pequenos negócios",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts"
   },
   "dependencies": {
-    "express": "^4.18.2",
     "cors": "^2.8.5",
+    "express": "^4.18.2",
     "sql.js": "^1.10.2",
-    "node-cron": "^3.0.3",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "@types/uuid": "^9.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }
